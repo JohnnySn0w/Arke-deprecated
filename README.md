@@ -1,2 +1,2 @@
 # Arke
-GUI for Iris
+GUI for [Iris](https://github.com/JordanHendl/Iris)
