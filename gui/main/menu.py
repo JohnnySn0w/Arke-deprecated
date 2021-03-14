@@ -3,7 +3,7 @@ from tkinter import N, NS, NW
 from gui.style.styles import mainMenuStyles
 from gui.main.workspace import mainWorkspace
 
-from gui.lib.buttonFuncs import openFile, windowSwap
+from functions.buttonFuncs import openFile, windowSwap
 
 
 def mainMenu(root):
@@ -37,7 +37,7 @@ def mainMenu(root):
         command=lambda: windowSwap(root, mainWorkspace),
     )
     redbutton.grid(row=2, column=0, sticky=N)
-    bluebutton = Button(root, text="Open", style="BluW.TButton", command=openFile)
+    bluebutton = Button(root, text="Open", style="BluW.TButton", command=lambda : openFile(root))
     bluebutton.grid(row=3, column=0)
     bluebutton = Button(root, text="Config", style="BluW.TButton")
     bluebutton.grid(row=4, column=0)

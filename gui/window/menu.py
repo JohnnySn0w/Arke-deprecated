@@ -1,9 +1,8 @@
 from tkinter import Menu
 from tkinter.ttk import Menubutton
+from functions.buttonFuncs import donothing, close
 
 def windowMenu(root):
-    def donothing():
-        pass
 
     menubar = Menu(root)
     filemenu = Menu(menubar, tearoff=0)
@@ -11,7 +10,7 @@ def windowMenu(root):
     filemenu.add_command(label="Open", command=donothing)
     filemenu.add_command(label="Save", command=donothing)
     filemenu.add_command(label="Save as...", command=donothing)
-    filemenu.add_command(label="Close", command=donothing)
+    filemenu.add_command(label="Close", command=close)
 
     filemenu.add_separator()
 

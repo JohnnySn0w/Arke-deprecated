@@ -4,7 +4,7 @@ from gui.style.styles import mainWorkspaceStyles
 from gui.window.menu import windowMenu
 
 
-def mainWorkspace(oldRoot):
+def mainWorkspace(oldRoot, filename='untitled'):
     oldRoot.destroy()
     root = Tk()
     # derive height and width from screen size
@@ -12,7 +12,7 @@ def mainWorkspace(oldRoot):
     width = int(root.winfo_screenwidth())
     root.geometry(f"{width}x{height}")
     root.resizable(True, True)
-    root.title("Arke - Workspace - FILENAMEHERELATER")
+    root.title(f"Arke - Workspace - {filename}")
 
     # configure grid
     root.grid_rowconfigure(0, weight=1)
