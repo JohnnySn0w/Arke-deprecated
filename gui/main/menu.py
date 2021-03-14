@@ -3,7 +3,7 @@ from tkinter import N, NS, NW
 from gui.style.styles import mainMenuStyles
 from gui.main.workspace import mainWorkspace
 
-from functions.buttonFuncs import openFile, windowSwap
+from gui.functions.buttonFuncs import openFile, windowSwap
 
 
 def mainMenu(root):
